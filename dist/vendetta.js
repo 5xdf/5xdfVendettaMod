@@ -3770,7 +3770,8 @@
     fe();
   });
   function startvnotif() {
-    window.alert("This mod may break your system. Please be alert and don't do anything stupid, thanks. -5xdf");
+    window.alert("Vendetta Modification by 5xdf has been loaded successfully.");
+    window.message("Error!");
   }
   var Wo = {};
   T(Wo, { default: () => mi });
