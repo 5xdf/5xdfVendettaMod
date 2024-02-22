@@ -53,4 +53,4 @@ Vendetta's codebase is platform-agnostic, but you need a platform-specific loade
 
 
 
-[ ] - ?
+- [ ] ?
