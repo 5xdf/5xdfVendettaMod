@@ -10,7 +10,7 @@ Object.seal = Object;
 import(".").then((m) => m.default()).catch((e) => {
     console.log(e?.stack ?? e.toString());
     alert([
-        "Failed to load Vendetta!\n",
+        "Failed to load 5xdfVendettaMod!\n",
         `Build Number: ${ClientInfoManager.Build}`,
         `Vendetta: ${__vendettaVersion}`,
         e?.stack || e.toString(),

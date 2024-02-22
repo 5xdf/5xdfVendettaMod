@@ -1738,10 +1738,10 @@
           fontFamily: Le.Fonts.CODE_SEMIBOLD,
           fontSize: 12,
           textAlignVertical: "center",
-          backgroundColor: w.BACKGROUND_SECONDARY,
+          backgroundColor: V.TRANSPARENT,
           color: w.TEXT_NORMAL,
           borderWidth: 1,
-          borderRadius: 4,
+          borderRadius: 0,
           borderColor: w.BACKGROUND_TERTIARY,
           padding: 10,
         },
@@ -2038,7 +2038,7 @@
           if (o === "Theme" && Ha(Ga())?.parent_id !== tt)
             return n.apply(this, t);
           X({
-            title: "Hold Up",
+            title: "HANG ON JUST WAIT A SECOND",
             content: [
               "This link is a ",
               React.createElement(u.Text, { style: $a["text-md/semibold"] }, o),
@@ -2048,8 +2048,8 @@
               return lo(o, r);
             },
             confirmText: "Install",
-            cancelText: "Cancel",
-            secondaryConfirmText: "Open in Browser",
+            cancelText: "Don\'t install",
+            secondaryConfirmText: "Don\'t install, open in browser.",
             onConfirmSecondary: function () {
               return Ua(r);
             },
@@ -3774,6 +3774,7 @@
     (window.vendetta = await jo(e)),
       e.push(await dn()),
       I.log("5xdfVendettaMod is ready!");
+      g("Vendetta mod by 5xdf, Loaded.", f("Check"));
   }
   var zo = c(() => {
     "use strict";
