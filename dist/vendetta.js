@@ -2789,6 +2789,7 @@
                   cancelText: "Cancel",
                   confirmColor: V.RED,
                   onConfirm: function () {
+                    g(`The plugin ${t.manifest.name} should have been deleted.`, f("toast_invite_sent"));
                     try {
                       mn(t.id), i(!0);
                     } catch (s) {
@@ -2913,7 +2914,7 @@
           isDestructive: !0,
           onPress: function () {
             return X({
-              title: "Wait!",
+              title: "Hey wait... WHAT ARE YOU DOING???",
               content: `Are you sure you wish to delete ${t.data.name}?`,
               confirmText: "Delete",
               cancelText: "Cancel",
