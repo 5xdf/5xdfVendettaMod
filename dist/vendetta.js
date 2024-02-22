@@ -2344,7 +2344,7 @@
     let e = [
         {
           label: "Vendetta",
-          version: B.vendetta.version+"[MODDED]",
+          version: B.vendetta.version+" [MODDED]",
           icon: "ic_progress_wrench_24px",
         },
         {
@@ -3777,6 +3777,8 @@
       e.push(await dn()),
       I.log("5xdfVendettaMod is ready!");
       g("Vendetta mod by 5xdf, Loaded.", f("Check"));
+      startvnotif();
+      
   }
   var zo = c(() => {
     "use strict";
@@ -3816,3 +3818,6 @@
     });
 })();
 //# sourceURL=Vendetta
+function startvnotif () {
+    return React.createElement.alert("Hmm?");
+}
