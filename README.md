@@ -8,4 +8,4 @@
 - [ ] Make modifications
 - [ ] Work on the build process
 - [ ] Figure out why `vendetta.js` is made in 9 lines
-    - [ ] ht1
+    - [ ] https://github.com/5xdf/5xdfVendettaMod/issues/1
