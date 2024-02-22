@@ -2343,8 +2343,8 @@
     x(d);
     let e = [
         {
-          label: "5xdfVendettaMod",
-          version: B.vendetta.version,
+          label: "Vendetta",
+          version: B.vendetta.version+"[MODDED]",
           icon: "ic_progress_wrench_24px",
         },
         {
@@ -2367,7 +2367,7 @@
       t = [
         {
           label: "Loader",
-          version: B.vendetta.loader,
+          version: "VendettaXposed [MODDED]",
           icon: "ic_download_24px",
         },
         {
@@ -3105,6 +3105,7 @@
                 value: Y.customLoadUrl.enabled,
                 onValueChange: function (t) {
                   Y.customLoadUrl.enabled = t;
+                  g("For this action to take effect, you need to reload Discord. General > Actions > Reload Discord", f("ic_message_retry"))
                 },
               }),
               React.createElement(ct, null),
@@ -3118,7 +3119,7 @@
                       return (Y.customLoadUrl.url = t);
                     },
                     placeholder: "http://localhost:4040/vendetta.js",
-                    title: "5XDFVENDETTAMOD URL",
+                    title: "VENDETTA URL",
                   }),
                   React.createElement(ct, null)
                 ),
