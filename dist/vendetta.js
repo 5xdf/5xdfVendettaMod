@@ -3770,7 +3770,7 @@
     fe();
   });
   function startvnotif() {
-    window.alert("Text?");
+    window.alert("This mod may break your system. Please be alert and don't do anything stupid, thanks. -5xdf");
   }
   var Wo = {};
   T(Wo, { default: () => mi });
