@@ -56,4 +56,4 @@ Vendetta's codebase is platform-agnostic, but you need a platform-specific loade
 - [ ] Make modifications
 - [ ] Work on the build process
 - [ ] Figure out why `vendetta.js` is made in 9 lines
-    _ - [ ] Extend it into multiple lines to make it readable
+    - [ ] Extend it into multiple lines to make it readable
