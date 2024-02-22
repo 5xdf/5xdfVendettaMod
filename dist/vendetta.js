@@ -3769,6 +3769,9 @@
     Ce();
     fe();
   });
+  function startvnotif() {
+    window.alert("Text?");
+  }
   var Wo = {};
   T(Wo, { default: () => mi });
   async function mi() {
@@ -3818,6 +3821,3 @@
     });
 })();
 //# sourceURL=Vendetta
-function startvnotif () {
-    return React.createElement.alert("Hmm?");
-}
