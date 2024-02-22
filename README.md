@@ -50,3 +50,7 @@ Vendetta's codebase is platform-agnostic, but you need a platform-specific loade
 8. Restart Discord. Upon reload, you should notice that your device will download Vendetta's bundled code from your server, rather than GitHub.
 
 9. Make your changes, rebuild, reload, go wild!
+
+
+
+[ ] - ?
