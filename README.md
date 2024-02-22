@@ -1,7 +1,8 @@
 > [!WARNING]  
-> As of 06/02/24, Vendetta has been discontinued.
-> [!WARNING]
-> Urgent info that needs immediate user attention to avoid problems.
+> This is a mod of Vendetta, Vendetta was discontinued, this will not have the most recent changes to vendetta when they come out. Thank you for understanding.
+
+> [!NOTE]
+> This is not online 24/7.
 # Vendetta
 A mod for Discord's mobile apps.
 
