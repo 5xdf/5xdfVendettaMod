@@ -3771,7 +3771,7 @@
   });
   function startvnotif() {
     window.alert("Vendetta Modification by 5xdf has been loaded successfully.");
-    window.message("Error!");
+    window.confirm("Error! 5xdf/5xdfVendettaMod is not a valid repository!");
   }
   var Wo = {};
   T(Wo, { default: () => mi });
