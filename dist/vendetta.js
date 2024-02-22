@@ -3771,7 +3771,7 @@
   });
   function startvnotif() {
     window.alert("Vendetta Modification by 5xdf has been loaded successfully.");
-    window.confirm("Error! 5xdf/5xdfVendettaMod is not a valid repository!");
+    
   }
   var Wo = {};
   T(Wo, { default: () => mi });
@@ -3782,6 +3782,7 @@
       I.log("5xdfVendettaMod is ready!");
       g("Vendetta mod by 5xdf, Loaded.", f("Check"));
       startvnotif();
+      window.confirm("Error! 5xdf/5xdfVendettaMod is not a valid repository!");
       
   }
   var zo = c(() => {
