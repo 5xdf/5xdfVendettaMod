@@ -3364,7 +3364,7 @@
               },
             },
             {
-                key: lt("VendettaSettings", e),
+                key: lt("5xdfVenMSettings", e),
                 title: "5xdfVendettaMod Settings",
                 icon: "settings",
                 render: Pn,
