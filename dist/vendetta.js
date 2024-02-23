@@ -3363,6 +3363,12 @@
                 );
               },
             },
+            {
+                key: lt("VendettaSettings", e),
+                title: "5xdfVendettaMod Settings",
+                icon: "settings",
+                render: Pn,
+              },
           ];
         }),
         (ut = function () {
