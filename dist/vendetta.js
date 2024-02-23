@@ -3100,7 +3100,7 @@
               { title: "Loader config" },
               React.createElement(Co, {
                 label: "Load from custom url",
-                subLabel: "Load 5xdfVendettaMod from a custom endpoint.",
+                subLabel: "Load Vendetta from a custom endpoint.",
                 leading: React.createElement(U.Icon, { source: f("copy") }),
                 value: Y.customLoadUrl.enabled,
                 onValueChange: function (t) {
