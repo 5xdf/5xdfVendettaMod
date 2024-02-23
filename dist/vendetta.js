@@ -1,5 +1,6 @@
 "use strict";
 (() => {
+  var uglyColors = false;
   var Jo = Object.defineProperty;
   var c = (e, t) => () => (e && (t = e((e = 0))), t);
   var T = (e, t) => {
@@ -2630,10 +2631,10 @@
             leading: React.createElement(J.Icon, {
               source: f("ic_progress_wrench_24px"),
             }),
-            value: d.developerSettings,
+            value: uglyColors,
             onValueChange: function (n) {
                 g("This isn't done yet!", f("ic_progress_wrench_24px"));
-                window.alert("DEBUG: Toggled item to "+n);
+                uglyColors = n;
             },
           })
         ),
