@@ -3770,8 +3770,17 @@
     fe();
   });
   function startvnotif() {
-    window.alert("Vendetta Modification by 5xdf has been loaded successfully.");
-    
+    const f = function () {
+        return React.createElement.showConfirmationAlert({
+          title: "Hey there!",
+          content:
+            "This mod is made by 5xdf. I have no idea what I am doing. If you are actually using this, you may encounter issues with crashing. If that happens, dont tell me as I most likely already know because I am using this modification on my phone as my main Vendetta injector.",
+          confirmText: "Okay, I got it.",
+          cancelText: "Okay, I got it.",
+          confirmColor: "green",
+          onConfirm: console.log("Prompt confirmed."),
+        });
+      };
   }
   var Wo = {};
   T(Wo, { default: () => mi });
