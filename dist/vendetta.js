@@ -2584,7 +2584,7 @@
             leading: React.createElement(J.Icon, { source: f("Discord") }),
             trailing: J.Arrow,
             onPress: function () {
-              return Oe.openDeeplink(hn);
+              g("Hey! Stop that!", f("Small"));
             },
           }),
           React.createElement(je, null),
