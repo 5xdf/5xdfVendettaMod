@@ -2457,14 +2457,13 @@
           }),
           React.createElement(je, null),
           React.createElement(Ya, {
-            label: "Ugly colors :)",
+            label: "Developer Settings",
             leading: React.createElement(J.Icon, {
               source: f("ic_progress_wrench_24px"),
             }),
             value: d.developerSettings,
             onValueChange: function (n) {
-              g("This isn't done yet.", f("ic_progress_wrench_24px"));
-              window.alert("DEBUG: TOGGLED ITEM TO "+n);
+              d.developerSettings = n;
             },
           })
         ),
@@ -2627,13 +2626,14 @@
           }),
           React.createElement(je, null),
           React.createElement(Ya, {
-            label: "Developer Settings",
+            label: "Ugly Colors :) (requires reload)",
             leading: React.createElement(J.Icon, {
               source: f("ic_progress_wrench_24px"),
             }),
             value: d.developerSettings,
             onValueChange: function (n) {
-              d.developerSettings = n;
+                g("This isn't done yet!", f("ic_progress_wrench_24px"));
+                window.alert("DEBUG: Toggled item to "+n);
             },
           })
         ),
