@@ -3366,7 +3366,7 @@
             {
                 key: lt("5xdfVenMSettings", e),
                 title: "5xdfVendettaMod Settings",
-                icon: "settings",
+                icon: "channel_setup_light",
                 render: Pn,
               },
           ];
