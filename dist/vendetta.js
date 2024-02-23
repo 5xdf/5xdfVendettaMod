@@ -3782,7 +3782,7 @@
       I.log("5xdfVendettaMod is ready!");
       g("Vendetta mod by 5xdf, Loaded.", f("Check"));
       startvnotif();
-      window.prompt("Error! 5xdf/5xdfVendettaMod is not a valid repository!");
+      error("Unable to load 5xdf/5xdfVendettaMod from GitHub! Please reload discord!")
       
   }
   var zo = c(() => {
