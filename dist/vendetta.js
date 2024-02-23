@@ -2507,6 +2507,175 @@
       )
     );
   }
+  // 5xdfVendettaMod Settings page
+  function Px() {
+    x(d);
+    let e = [
+        {
+          label: "5xdfVendettaMod",
+          version: "30ASjd4",
+          icon: "ic_progress_wrench_24px",
+        },
+        {
+          label: "Discord",
+          version: `${B.discord.version} (${B.discord.build})`,
+          icon: "Discord",
+        },
+        { label: "React", version: B.react.version, icon: "ic_category_16px" },
+        {
+          label: "React Native",
+          version: B.react.nativeVersion,
+          icon: "mobile",
+        },
+        {
+          label: "Bytecode",
+          version: B.hermes.bytecodeVersion,
+          icon: "ic_server_security_24px",
+        },
+      ],
+      t = [
+        {
+          label: "Loader",
+          version: "5xdf/5xdfVendettaMod (GITHUB)",
+          icon: "ic_download_24px",
+        },
+        {
+          label: "Operating System",
+          version: `${B.os.name} ${B.os.version}`,
+          icon: "ic_cog_24px",
+        },
+        ...(B.os.sdk
+          ? [
+              {
+                label: "SDK",
+                version: B.os.sdk,
+                icon: "ic_profile_badge_verified_developer_color",
+              },
+            ]
+          : []),
+        {
+          label: "Manufacturer",
+          version: B.device.manufacturer,
+          icon: "ic_badge_staff",
+        },
+        {
+          label: "Brand",
+          version: B.device.brand,
+          icon: "ic_settings_boost_24px",
+        },
+        { label: "Model", version: B.device.model, icon: "ic_phonelink_24px" },
+        {
+          label: u.Platform.select({ android: "Codename", ios: "Machine ID" }),
+          version: B.device.codename,
+          icon: "ic_compose_24px",
+        },
+      ];
+    return React.createElement(
+      S,
+      null,
+      React.createElement(
+        u.ScrollView,
+        { style: { flex: 1 }, contentContainerStyle: { paddingBottom: 38 } },
+        React.createElement(
+          Dn,
+          { title: "Links", titleStyleType: "no_border" },
+          React.createElement(J, {
+            label: "Discord Server",
+            leading: React.createElement(J.Icon, { source: f("Discord") }),
+            trailing: J.Arrow,
+            onPress: function () {
+              return Oe.openDeeplink(hn);
+            },
+          }),
+          React.createElement(je, null),
+          React.createElement(J, {
+            label: "GitHub",
+            leading: React.createElement(J.Icon, {
+              source: f("img_account_sync_github_white"),
+            }),
+            trailing: J.Arrow,
+            onPress: function () {
+              return Oe.openURL(En);
+            },
+          })
+        ),
+        React.createElement(
+          Dn,
+          { title: "Actions" },
+          React.createElement(J, {
+            label: "Reload Discord",
+            leading: React.createElement(J.Icon, {
+              source: f("ic_message_retry"),
+            }),
+            onPress: function () {
+              return Ee.reload();
+            },
+          }),
+          React.createElement(je, null),
+          React.createElement(J, {
+            label: d.safeMode?.enabled
+              ? "Return to Normal Mode"
+              : "Reload in Safe Mode",
+            subLabel: `This will reload Discord ${
+              d.safeMode?.enabled ? "normally." : "without loading plugins."
+            }`,
+            leading: React.createElement(J.Icon, {
+              source: f("ic_privacy_24px"),
+            }),
+            onPress: Ze,
+          }),
+          React.createElement(je, null),
+          React.createElement(Ya, {
+            label: "Developer Settings",
+            leading: React.createElement(J.Icon, {
+              source: f("ic_progress_wrench_24px"),
+            }),
+            value: d.developerSettings,
+            onValueChange: function (n) {
+              d.developerSettings = n;
+            },
+          })
+        ),
+        React.createElement(
+          Dn,
+          { title: "Info" },
+          React.createElement(
+            He,
+            { label: "Versions", icon: "ic_information_filled_24px" },
+            e.map(function (n, r) {
+              return React.createElement(
+                React.Fragment,
+                null,
+                React.createElement(St, {
+                  label: n.label,
+                  version: n.version,
+                  icon: n.icon,
+                }),
+                r !== e.length - 1 && React.createElement(je, null)
+              );
+            })
+          ),
+          React.createElement(je, null),
+          React.createElement(
+            He,
+            { label: "Platform", icon: "ic_mobile_device" },
+            t.map(function (n, r) {
+              return React.createElement(
+                React.Fragment,
+                null,
+                React.createElement(St, {
+                  label: n.label,
+                  version: n.version,
+                  icon: n.icon,
+                }),
+                r !== t.length - 1 && React.createElement(je, null)
+              );
+            })
+          )
+        )
+      )
+    );
+  }
   var J,
     Ya,
     Dn,
@@ -3367,7 +3536,7 @@
                 key: lt("5xdfVenMSettings", e),
                 title: "5xdfVendettaMod Settings",
                 icon: "ic_edit_24px",
-                render: Pn,
+                render: Px,
               },
           ];
         }),
