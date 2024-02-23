@@ -2595,7 +2595,7 @@
             }),
             trailing: J.Arrow,
             onPress: function () {
-              return Oe.openURL(En);
+              g("Hey! Stop that!", f("Small"));
             },
           })
         ),
